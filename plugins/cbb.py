@@ -36,10 +36,10 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             text=START_MSG.format(first=query.from_user.first_name),
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([
-                    [InlineKeyboardButton("• ғᴏʀ ᴍᴏʀᴇ •", url='https://t.me/Mikey_anime_team')],
-                    [InlineKeyboardButton("• ᴀʙᴏᴜᴛ", callback_data='about'),
-                     InlineKeyboardButton("ʜᴇʟᴘ •", url='https://t.me/straw_hat_yonko')],
-                    [InlineKeyboardButton("• ʜᴀɴᴛᴀɪ ᴄʜᴀɴɴᴇʟ •", url='https://t.me/+7Ext4kkaB9ZmZTRl')],
+                    [InlineKeyboardButton("∆ Backup Channel ∆", url='https://t.me/AIO_Backup')],
+                    [InlineKeyboardButton("∆ About Me ∆", callback_data='about'),
+                     InlineKeyboardButton("∆ Developer ∆", url='https://t.me/straw_hat_yonko')],
+                    [InlineKeyboardButton("∆ Share Us ∆", url='https://telegram.me/share/url?text=%2A%2ABest%20Adult%20Network%20in%20Telegram%2A%2A%0A%0Ahttps://t.me/AIO_Backup%0A%0A%2A%2AJoin%20Now%2A%2A')],
                 ])
         )
     
