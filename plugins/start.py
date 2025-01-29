@@ -81,15 +81,15 @@ async def start_command(client: Client, message: Message):
                 await msg.copy(chat_id=message.from_user.id, caption=caption, parse_mode=ParseMode.HTML, reply_markup=reply_markup, protect_content=PROTECT_CONTENT)
             except:
                 pass
-        await message.reply_text(f"<b>‼️ Forward the Files to Saved Messages or somewhere else before Downloading it.\n\nIt will get Delete after 1 Hour ‼️</b>")
-        await message.reply_text(f"<b>Join @Animes_Empire for More ⚡</b>")
+        await message.reply_text(f"<b>‼️ Forward the Files to Saved Messages or somewhere else before Downloading it.\n\nIt will get Delete after 5 Minutes‼️</b>")
+        await message.reply_text(f"<b>Join @AIO_Backup for More ⚡</b>")
         return
     else:
         reply_markup=InlineKeyboardMarkup([
-                    [InlineKeyboardButton("• ғᴏʀ ᴍᴏʀᴇ •", url='https://t.me/Mikey_anime_team')],
-                    [InlineKeyboardButton("• ᴀʙᴏᴜᴛ", callback_data='about'),
-                     InlineKeyboardButton("ʜᴇʟᴘ •", url='https://t.me/straw_hat_yonko')],
-                    [InlineKeyboardButton("• ʜᴀɴᴛᴀɪ ᴄʜᴀɴɴᴇʟ •", url='https://t.me/+7Ext4kkaB9ZmZTRl')],
+                    [InlineKeyboardButton("∆ Backup Channel ∆", url='https://t.me/AIO_Backup')],
+                    [InlineKeyboardButton("∆ About Me ∆", callback_data='about'),
+                     InlineKeyboardButton("∆ Developer ∆", url='https://t.me/straw_hat_yonko')],
+                    [InlineKeyboardButton("∆ Share Us ∆", url='https://telegram.me/share/url?text=%2A%2ABest%20Adult%20Network%20in%20Telegram%2A%2A%0A%0Ahttps://t.me/AIO_Backup%0A%0A%2A%2AJoin%20Now%2A%2A')],
                 ])
         await message.reply_photo(
             photo= START_PIC,
@@ -189,13 +189,13 @@ async def send_text(client: Bot, message: Message):
                 pass
             total += 1
         
-        status = f"""<b><u>ʙʀᴏᴀᴅᴄᴀꜱᴛ...</u>
+        status = f"""<b><u>🚀 Broadcast Completed</u></b>
 
-Total Users: <code>{total}</code>
-Successful: <code>{successful}</code>
-Blocked Users: <code>{blocked}</code>
-Deleted Accounts: <code>{deleted}</code>
-Unsuccessful: <code>{unsuccessful}</code></b>"""
+<b>😍 Total Users :</b> <code>{total}</code>
+<b>😁 Successful :</b> <code>{successful}</code>
+<b>😒 Blocked Users :</b> <code>{blocked}</code>
+<b>😢 Deleted Accounts :</b> <code>{deleted}</code>
+<b>😔 Unsuccessful :</b> <code>{unsuccessful}</code>"""
         
         return await pls_wait.edit(status)
 
