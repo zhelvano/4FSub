@@ -34,7 +34,7 @@ def convert_time(duration_seconds: int) -> str:
 async def add_admin_command(client: Bot, message: Message):
     user_id = message.from_user.id
     if user_id != OWNER_ID:
-        await message.reply_text("madherchod tere baap ne tujhe owner banaya mera!")
+        await message.reply_text("Motherchod! You got admin From your DAD @Soutick_09! Mind It.")
         return
 
     if len(message.command) != 2:
@@ -65,7 +65,7 @@ async def add_admin_command(client: Bot, message: Message):
 async def remove_admin_command(client: Bot, message: Message):
     user_id = message.from_user.id
     if user_id != OWNER_ID:
-        await message.reply_text("madherchod tere baap ne tujhe owner banaya mera!")
+        await message.reply_text("Motherchod! You got owner From your DAD @Soutick_09! Mind It.")
         return
 
     if len(message.command) != 2:
@@ -97,7 +97,7 @@ async def admin_list_command(client: Bot, message: Message):
     user_id = message.from_user.id
     is_user_admin = await present_admin(user_id)
     if user_id != OWNER_ID:
-        await message.reply_text("madherchod tere baap ne tujhe owner banaya mera!")
+        await message.reply_text("Motherchod! You got owner From your DAD @Soutick_09! Mind It.")
         return
 
     our_admin_ids = await full_adminbase()  
@@ -112,7 +112,7 @@ async def admin_list_command(client: Bot, message: Message):
 
     if formatted_admins:
         admins_text = "\n".join(formatted_admins)
-        text = f"<b>radhwo ki list:</b>\n\n{admins_text}"
+        text = f"<b>randio ki list:</b>\n\n{admins_text}"
     else:
         text = "<b>Admin list is empty</b>"
 
