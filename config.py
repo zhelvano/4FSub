@@ -10,67 +10,65 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7326140432:AAEZ2v_4qS4A89y0xQy09csQg_zqoIC4JDg")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7968053738:AAErIyHT7vFqo_bpQJoQuAKDrST4A_7Recs")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "20718334"))
+APP_ID = int(os.environ.get("APP_ID", "28450765"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "4e81464b29d79c58d0ad8a0c55ece4a5")
+API_HASH = os.environ.get("API_HASH", "36f00f11f9d5c65e69b81fd804453a93")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002177334941"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002314807164"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "5585016974"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "5827289728"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://gohan:gohanxbot@cluster0.xoc5s.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://FileSout:FileSout@cluster0.2d5js.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #force sub channel id, if you want enable force sub
-FORCESUB_CHANNEL = int(os.environ.get("FORCESUB_CHANNEL", "-1002072642438"))
-FORCESUB_CHANNEL2 = int(os.environ.get("FORCESUB_CHANNEL2", "-1001930406310"))
-FORCESUB_CHANNEL3 = int(os.environ.get("FORCESUB_CHANNEL3", "-1002033058072"))
-FORCESUB_CHANNEL4 = int(os.environ.get("FORCESUB_CHANNEL4", "-1002177334941"))
+FORCESUB_CHANNEL = int(os.environ.get("FORCESUB_CHANNEL", "-1002445963619"))
+FORCESUB_CHANNEL2 = int(os.environ.get("FORCESUB_CHANNEL2", "-1002296605015"))
+FORCESUB_CHANNEL3 = int(os.environ.get("FORCESUB_CHANNEL3", "-1002118318196"))
+FORCESUB_CHANNEL4 = int(os.environ.get("FORCESUB_CHANNEL4", "0"))
                                        
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
-START_PIC = os.environ.get("START_PIC", "https://envs.sh/oCO.jpg")
-FORCE_PIC = os.environ.get("FORCE_PIC", "https://envs.sh/opu.jpg")
+START_PIC = os.environ.get("START_PIC", "https://envs.sh/awv.jpg")
+FORCE_PIC = os.environ.get("FORCE_PIC", "https://envs.sh/awN.jpg")
 
-HELP_TXT = "https://t.me/AHSS_HELP_ZONE"
-ABOUT_TXT = "<b>» ᴏᴡɴᴇʀ: <a href=https://t.me/TeenGohan002>ɢᴏʜᴀɴ</a>\n» ᴍᴀᴛ ᴀɴɪᴍᴇ : <a href=https://t.me/Mikey_anime_team>ᴍᴀᴛ ᴀɴɪᴍᴇ</a>\n» ʜᴀɴᴛᴀɪ ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/+7Ext4kkaB9ZmZTRl>ʜᴀɴᴛᴀɪ ᴄʜᴀɴɴᴇʟ</a>\n» ʙᴀᴄᴋ ᴜᴘ : <a href=https://t.me/+ufHLR0GHOSNkNjI1>ʙᴀᴄᴋ ᴜᴘ</a>\n» ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/Cosmic_Awaken>ᴏʙɪᴛᴏ</a></b>"
-
-#start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>ʜɪ ᴛʜᴇʀᴇ... {first}! 💥\n\nɪ ᴀᴍ ᴀ ꜰɪʟᴇ ꜱᴛᴏʀᴇ ʙᴏᴛ...!\nɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴘʀɪᴠᴀᴛᴇ ꜰɪʟᴇꜱ ᴛʜʀᴏᴜɢʜ ᴀ ꜱᴘᴇᴄɪꜰɪᴄ ʟɪɴᴋ....!\nᴘᴏᴡᴇʀᴇᴅ ʙʏ - <a href=https://t.me/Mikey_anime_team>ᴍᴀᴛ ᴀɴɪᴍᴇ</a></b>")
+HELP_TXT = "<b>If you can't use me or don't get any files, it's mean you don't join either <a href=https://t.me/+LGPS4EDPWLA2YTM1>AIO J*v</a> or <a href=https://t.me/AIO_Backup>AIO Backup</a>. First Join These Channels Then retry.</b>"
+ABOUT_TXT = "<b>• Creator: <a href=https://t.me/Soutick_09>Soutick</a>\n• Backup Channel: <a href=https://t.me/AIO_Backup>AIO Backup 🔞</a>\n• Best Friend: <a href=tg://settings>This Person</a></b>"
+START_MSG = os.environ.get("START_MESSAGE", "<b>Hello!! {mention} 👋! I'm Alya.\n\nI'm here to provide you adult contents for Free 😄\n\n© @AIO_Backup</b>")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "5355745915 6911235730 5924136853 5585016974").split()):
+    for x in (os.environ.get("ADMINS", "7272399911").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "ʜᴇʟʟᴏ {first}!⚡\n\n🫧ᴘʟᴇᴀꜱᴇ ᴊᴏɪɴ ʙᴏᴛʜ ᴏꜰ ᴏᴜʀ ᴀɴɪᴍᴇ ᴄʜᴀɴɴᴇʟꜱ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ...!")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "ʜᴇʟʟᴏ {first}!⚡\n\n🫧 ᴘʟᴇᴀꜱᴇ ᴊᴏɪɴ ʙᴏᴛʜ ᴏꜰ ᴏᴜʀ ᴀɴɪᴍᴇ ᴄʜᴀɴɴᴇʟꜱ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ...!")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 
 #set True if you want to prevent users from forwarding files from bot
-PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" else False
+PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
 
 #Set true if you want Disable your Channel Posts Share button
-DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
+DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'False'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "​🚫Pʟᴇᴀꜱᴇ ᴅᴏɴ'ᴛ ᴍᴇꜱꜱᴀɢᴇ ᴍᴇ ᴅɪʀᴇᴄᴛʟʏ ɪ ᴀᴍ ᴏɴʟʏ ᴡᴏʀᴋ ꜰᴏʀ​ - <a href=https://t.me/Anime_Sub_Society>ᴀɴɪᴍᴇ sᴏᴄɪᴇᴛʏ</a>"
+USER_REPLY_TEXT = "🚫 Pʟᴇᴀꜱᴇ ᴅᴏɴ'ᴛ ᴍᴇꜱꜱᴀɢᴇ ᴍᴇ ᴅɪʀᴇᴄᴛʟʏ ɪ ᴀᴍ ᴏɴʟʏ ᴡᴏʀᴋ ꜰᴏʀ - <a href=https://t.me/AIO_Backup>AIO Backup</a>" 
 
-ADMINS.append(7546728320)
-ADMINS.append(5585016974)
+ADMINS.append(5827289728)
+ADMINS.append(5827289728)
 
 AUTO_DEL = os.environ.get("AUTO_DEL", "True")
 DEL_TIMER = int(os.environ.get("DEL_TIMER", "600"))
