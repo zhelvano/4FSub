@@ -35,7 +35,7 @@ DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 FORCESUB_CHANNEL = int(os.environ.get("FORCESUB_CHANNEL", "-1002445963619"))
 FORCESUB_CHANNEL2 = int(os.environ.get("FORCESUB_CHANNEL2", "-1002296605015"))
 FORCESUB_CHANNEL3 = int(os.environ.get("FORCESUB_CHANNEL3", "-1002118318196"))
-FORCESUB_CHANNEL4 = int(os.environ.get("FORCESUB_CHANNEL4", "0"))
+FORCESUB_CHANNEL4 = int(os.environ.get("FORCESUB_CHANNEL4", "-1002406502895"))
                                        
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
