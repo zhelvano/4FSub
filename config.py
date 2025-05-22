@@ -10,26 +10,26 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7968053738:AAErIyHT7vFqo_bpQJoQuAKDrST4A_7Recs")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7914507949:AAEEIn1J1v_Tr_l1PQAi_4O-0BKQ70Gjj_M")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "28450765"))
+APP_ID = int(os.environ.get("APP_ID", "29387376"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "36f00f11f9d5c65e69b81fd804453a93")
+API_HASH = os.environ.get("API_HASH", "5a159dde6013b22490f29f7cbae4c679")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002314807164"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002602313273"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "5827289728"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "1301819689"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://FileSout:FileSout@cluster0.2d5js.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://zohunubot:hoki1234@zohunubot.kci0rqz.mongodb.net/?retryWrites=true&w=majority&appName=ZohunUbot")
+DB_NAME = os.environ.get("DATABASE_NAME", "ZohunUbot")
 
 #force sub channel id, if you want enable force sub
 FORCESUB_CHANNEL = int(os.environ.get("FORCESUB_CHANNEL", "-1002445963619"))
@@ -47,7 +47,7 @@ ABOUT_TXT = "<b>• Creator: <a href=https://t.me/Soutick_09>Soutick</a>\n• Ba
 START_MSG = os.environ.get("START_MESSAGE", "<b>Hello!! {mention} 👋! I'm Alya.\n\nI'm here to provide you adult contents for Free 😄\n\n© @AIO_Backup</b>")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "7272399911").split()):
+    for x in (os.environ.get("ADMINS", "1301819689").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
